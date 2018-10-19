@@ -63,8 +63,8 @@
 #include <string>
 #include <vector>
 
-#include "Liberty.hh"
 #include "Machine.hh"
+#include "Liberty.hh"
 #include "Sdc.hh"
 #include "Sta.hh"
 #include "StringUtil.hh"
