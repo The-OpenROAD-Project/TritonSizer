@@ -83,7 +83,6 @@
 #include "DelayCalc.hh"
 #include "DisallowCopyAssign.hh"
 #include "EquivCells.hh"
-#include "Error.hh"
 #include "ExceptionPath.hh"
 #include "FuncExpr.hh"
 #include "Graph.hh"
