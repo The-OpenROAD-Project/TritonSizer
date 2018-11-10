@@ -7,15 +7,15 @@ UCSD Sizer
 ### How To Compile
     $ git clone --recursive https://github.com/abk-openroad/TritonSizer.git
     
-Then, modify the \_\_ZLIB_HOME\_\_ and \_\_OPENSTA_HOME\_\_ to the corresponding install paths in [src/Makefile](src/Makefile)
-
     $ cd ~/TritonSizer
     $ make clean
     $ make 
     
 ### How To Execute
 
-    $ sizer -env <environment file> -f <command file> | tee log
+    $ source load.sh
+	$ cd src
+	$ sizer -env <environment file> -f <command file> | tee log
 
     //<environment file> is used to set environment variables and library information. <command file> contains information for input/output files and command options. 
 

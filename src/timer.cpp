@@ -2838,7 +2838,7 @@ double Sizer::LookupSwitchPower(CELL &cell, unsigned view) {
         delta_sw += origin_cap[i] * sw_coef[i];
     }
 
-    if(isnan(delta_sw)) {
+    if(std::isnan(delta_sw)) {
         delta_sw = 0.0;
     }
 
@@ -2881,7 +2881,7 @@ double Sizer::LookupDeltaSwitchPower(CELL &cell, int steps, int dir,
         }
     }
 
-    if(isnan(delta_sw)) {
+    if(std::isnan(delta_sw)) {
         delta_sw = 0.0;
     }
 
@@ -3476,7 +3476,7 @@ double Sizer::LookupDeltaIntPower(CELL &cell, int steps, int dir,
 
     double delta_power = post_intPower - pre_intPower;
 
-    if(isnan(delta_power)) {
+    if(std::isnan(delta_power)) {
         delta_power = 0.0;
     }
     return (delta_power);

@@ -1,5 +1,5 @@
 # Please set your environment
-TCLLIB = -L __YOUR_TCL8.4_HOME__/lib -ltcl8.4
+TCLLIB = -L ../module/tcl/unix/install-sp/lib -ltcl8.4
 ZLIB_HOME = __YOUR_ZLIB_HOME__/lib
 
 # Below references submodule 
