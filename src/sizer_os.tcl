@@ -35,6 +35,52 @@
 ## OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 ## OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ###############################################################################
+###################################################################
+#   Common functions 
+#
+###################################################################
+
+proc echoCmd {cmd} {
+    puts $cmd
+}
+
+proc setVar {var val} {
+    global $var
+    set $var $val
+}
+
+proc printVar {var} {
+    global $var
+    puts -nonewline "pt variable $var is "
+    puts [expr $$var]
+    return $$var
+}
+
+#### this is a test routine
+proc testPrintList { cellList } {
+  foreach item $cellList {
+    if { [llength $item ] > 1 } {
+      testPrintList $item
+    } else {
+      puts $item
+    }
+  }
+}
+
+
+proc getServerHostname {} {
+    return [exec hostname]
+}
+
+proc exitServer {} {
+    exit
+}
+
+proc checkServer {} {
+    return 1 
+}
+
+
 
 
 ###################################################################

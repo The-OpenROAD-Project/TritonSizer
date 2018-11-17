@@ -1984,10 +1984,11 @@ void Sizer::exeOSServerOne(int port, unsigned view) {
     }
 
     if(ptScriptFile == "" || !fin.is_open()) {
-        fout << "package ifneeded tbcload 1.7 [list load [file join . "
-                "libtbcload1.7.so]]"
-             << endl;
-        fout << "source ./sizer.tbc" << endl;
+        //fout << "package ifneeded tbcload 1.7 [list load [file join . "
+        //        "libtbcload1.7.so]]"
+        //     << endl;
+        //fout << "source ./sizer.tbc" << endl;
+        fout << "source ./sizer_os.tcl" << endl;
         fout << "set design  \"" << benchname << "\"" << endl;
         fout << "set lib_path \". " << dbLibPath << "\"" << endl;
         fout << "set lib_file_list \[\]" << endl;
