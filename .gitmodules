@@ -2,3 +2,6 @@
 	path = module/tcl
 	url = https://github.com/tcltk/tcl.git
 	branch = core-8-4-20-rc
+[submodule "module/OpenSTA"]
+	path = module/OpenSTA
+	url = https://github.com/mgwoo/OpenSTA.git
