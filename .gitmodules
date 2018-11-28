@@ -1,6 +1,3 @@
-[submodule "module/OpenSTA"]
-	path = module/OpenSTA
-	url = https://github.com/abk-openroad/OpenSTA
 [submodule "module/tcl"]
 	path = module/tcl
 	url = https://github.com/tcltk/tcl.git
