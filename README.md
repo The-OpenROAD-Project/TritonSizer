@@ -32,16 +32,18 @@ UCSD Sizer
 
 ### Note for the Liberty parser in TritonSizer
 
-The Liberty parser in TritonSizer is implemented based on the Liberty parser provided by the ISPD13 Discrete Gate Sizing contest (link: http://www.ispd.cc/contests/13/ispd2013_contest.html). We have extended and improved the original Liberty parser significantly to enable support for Liberty files from various foundries including TSMC65, TSMC45, TSMC28, TSMC16 and ASAP7. However, as we support a limited set of keywords for parsing only the information consumable by TritonSizer, some Liberty files might not work.
+The Liberty parser in TritonSizer is implemented based on the Liberty parser provided by the ISPD13 Discrete Gate Sizing contest (link: http://www.ispd.cc/contests/13/ispd2013_contest.html). We have extended and improved the original Liberty parser significantly to enable support for Liberty files from various foundries including TSMC65, TSMC45, ST28, TSMC16 and ASAP7. However, as we support a limited set of keywords for parsing only the information consumable by TritonSizer, some Liberty files might not work.
 
-Here is the list of foundry libraries that we verified:
+Here is the list of foundry libraries that we have verified:
 TSMC65
 TSMC45
-TSMC28
+ST28
 TSMC16
 ASAP7
 
-To get support, please provide us access to the Liberty files along with the log file and the error messages.
+To obtain support for another library, please provide us access to the Liberty files along with the TritonSizer log file and the error messages.  Alternatively, you make code changes in ckt.cpp files and run the regression tests in the bench directory (with ASAP7 library), then issue a pull request.
+
+Contact: Minsoo Kim, mik226@eng.ucsd.edu
 
 ### Authors
 - Hyein Lee and Dr. Jiajia Li (Ph.D. advisors: Prof. Andrew B. Kahng)
