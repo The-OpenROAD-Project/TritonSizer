@@ -20,7 +20,7 @@ UCSD Sizer
     //<environment file> is used to set environment variables and library information. <command file> contains information for input/output files and command options. 
 
 ### Manual
-* doc/TritonSizer-UserGuide-v0.1.pdf
+* doc/TritonSizer-UserGuide-v*.pdf
     
 ### 3-party module
 * Tcl v8.4.20
