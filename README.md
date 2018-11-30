@@ -2,7 +2,6 @@
 UCSD Sizer 
 
 ### Pre-requisite
-* Tcl (for OpenSTA) == 8.4 (Currently, it only supports Tcl v8.4.)
 * bison
 * GCC
 * Recommended OS: CentOS 6
