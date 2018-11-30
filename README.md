@@ -2,7 +2,10 @@
 UCSD Sizer 
 
 ### Pre-requisite
-* OpenSTA API
+* Tcl (for OpenSTA) == 8.4 (Currently, it only supports Tcl v8.4.)
+* bison
+* GCC
+* Recommended OS: CentOS 6
 
 ### How To Compile
     $ git clone --recursive https://github.com/abk-openroad/TritonSizer.git
@@ -24,7 +27,6 @@ UCSD Sizer
     
 ### 3-party module
 * Tcl v8.4.20
-* zlib v1.2.3
 * OpenSTA API
 
 ### License
