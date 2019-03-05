@@ -10,8 +10,8 @@ ENV CC=/opt/rh/devtoolset-7/root/usr/bin/gcc \
     PATH=/opt/rh/devtoolset-7/root/usr/bin:$PATH
 
 # install dependencies 
-RUN yum install -y wget libstdc++-devel libstdc++-static libX11-devel \
-    boost-devel zlib-devel tcl-devel autoconf automake swig flex libtool
+RUN yum install -y wget libstdc++-devel libstdc++-static libX11-devel yacc byacc \
+    boost-devel zlib-devel tcl tcl-devel autoconf automake swig flex libtool
 
 # add source code
 COPY . TritonSizer
@@ -19,9 +19,10 @@ COPY . TritonSizer
 # install TritonSizer 
 RUN cd TritonSizer && \
     make clean && \
-    make && \
-    source load.sh
+    make
+ENV LD_LIBRARY_PATH=/TritonSizer/module/tcl/unix/install-sp/lib
 
-# test installation
-RUN cd TritonSizer/src && \
-    sizer --help
+# set working directory
+WORKDIR TritonSizer/src
+
+ENTRYPOINT ["/TritonSizer/src/sizer"]
